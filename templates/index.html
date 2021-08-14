@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube comment emotions</title>
+</head>
+
+<body>
+
+    <div style="color:rgb(255, 0, 0)">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h1>YOUTUBE COMMENT EMOTION CLASSIFIER</h1>
+            <h3 style="color:rgb(14, 143, 230)">Youtube Video Link:</h3><input id="first" name="Link" type="url">
+            
+            <br><br><button id="sub" type="submit ">SUBMIT</button>
+            <br>
+
+        </form>
+<h4>(After submitting the form please wait it may take some time to get the comments)</h4>
+        <br><br><h3 style="color:rgb(0, 0, 0)">{{ prediction_text }}</h3>
+        
+    </div>
+
+    <style>
+        body {
+            background-color: rgb(167, 171, 172);
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(240, 171, 42);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #fuel:hover {
+            background-color: rgb(243, 214, 51);
+        }
+        
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: rgb(66, 92, 241);
+        }
+        
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: rgb(14, 216, 64);
+        }
+        
+        #sub {
+            width: 150px;
+            height: 70px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: rgb(226, 13, 13);
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
