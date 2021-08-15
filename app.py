@@ -89,4 +89,4 @@ def predict():
             '''.format(fuck[0],fuck[1],fuck[2],fuck[3],fuck[4],fuck[5]))
 
 if __name__=="__main__":
-    app.run(debug=False, host='0.0.0.0')
+    app.run(debug=True)
