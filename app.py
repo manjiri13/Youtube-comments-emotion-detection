@@ -14,10 +14,12 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 import re
+import tensorflow.compat.v1 as tf
+
 from tensorflow.keras.preprocessing.text import one_hot
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import streamlit as st
-
+tf.disable_v2_behavior()
 def predict(link):
     
         data=[]
