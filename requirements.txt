@@ -1,0 +1,10 @@
+pandas==1.2.4
+numpy==1.19.0
+nltk==3.6.2
+requests==2.24.0
+selenium==3.141.0
+tensorflow==2.5.0
+jsonify==0.5
+streamlit==0.86.0
+keras_nightly==2.5.0.dev2021032900
+keras==2.6.0
