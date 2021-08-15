@@ -11,8 +11,8 @@ from keras.models import load_model
 import pandas as pd 
 import numpy as np 
 import nltk
-import stopwords
-# from nltk.corpus import stopwords
+# import stopwords
+from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 import re
 from tensorflow.keras.preprocessing.text import one_hot
@@ -47,7 +47,7 @@ def predict():
             df["length"] = [len(i) for i in df["Comment"]]
             df1=df[df["length"] > 300].index
             df.drop(df1,axis=0,inplace=True)
-            stopwords = set(stopwords.words('english'))
+            stopwords = set(nltk.corpus.stopwords.words('english'))
             vocab_size=10000
             len_sentence=150
             def text_prepare(data, column):
