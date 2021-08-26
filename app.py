@@ -23,7 +23,7 @@ tf.disable_v2_behavior()
 def predict(link):
     
         data=[]
-        with Chrome(executable_path=r'/home/unknown/Documents/chromedriver') as driver:
+        with Chrome(executable_path=r'./chromedriver') as driver:
             wait = WebDriverWait(driver,15)
             driver.get(link)
             time.sleep(5)
